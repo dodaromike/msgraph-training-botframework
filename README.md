@@ -12,8 +12,6 @@ languages:
 
 This sample demonstrates how to use the Microsoft Graph .NET SDK to access data in Office 365 from Microsoft Bot Framework bots.
 
-This bot has been created using [Bot Framework](https://dev.botframework.com), it shows how to create a simple bot that accepts input from the user and echoes it back.
-
 ## Prerequisites
 
 - [.NET SDK](https://dotnet.microsoft.com/download) version 6
@@ -69,8 +67,6 @@ Deploy the bot to Azure using the following procedures.
 
 1. Select the upper-left menu, then select **Create a resource**.
 
-    ![A screenshot of the Azure Portal menu](images/create-resource.png)
-
 1. On the **New** page, search for `Azure Bot` and select **Azure Bot**.
 
 1. On the **Azure Bot** page, select **Create**.
@@ -95,8 +91,6 @@ Deploy the bot to Azure using the following procedures.
     > This client secret is never shown again, so make sure you copy it now. You will need to enter this value in multiple places so keep it safe.
 
 1. Select **Overview** in the left-hand menu. Copy the value of the **Application (client) ID** and save it, you will need it in the following steps.
-
-    ![A screenshot of the application ID of the new app registration](./images/aad-application-id.png)
 
 ## Create a web app registration
 
@@ -126,8 +120,6 @@ Deploy the bot to Azure using the following procedures.
     - **profile**
     - **Calendars.ReadWrite**
     - **MailboxSettings.Read**
-
-    ![A screenshot of configured permissions](images/configured-permissions.png)
 
 ### About permissions
 
@@ -183,8 +175,6 @@ Consider what each of those permission scopes allows the bot to do, and what the
     - **Microsoft App password:** your **Graph Calendar Bot** client secret
     - **Encrypt keys stored in your bot configuration:** Enabled
 
-    ![A screenshot of the New bot configuration dialog](images/new-bot-config.png)
-
 1. Select **Save and connect**. After the emulator connects, you should see `Welcome to Microsoft Graph CalendarBot. Type anything to get started.`
 
 1. Type some text and send it to the bot. The bot responds with a login prompt.
@@ -195,11 +185,7 @@ Consider what each of those permission scopes allows the bot to do, and what the
 
 1. Once authentication and consent are complete, the pop-up window provides a validation code. Copy the code and close the window.
 
-    ![A screenshot of the Bot Framework Emulator validation code](images/validation-code.png)
-
 1. Enter the validation code in the chat window to complete the login.
-
-    ![A screenshot of the login conversation with the sample bot](images/bot-login.png)
 
 1. If you select the **Show token** button (or type `show token`), the bot displays the access token. The **Log out** button (or typing `log out`) will log you out.
 
