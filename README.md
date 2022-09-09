@@ -1,4 +1,4 @@
-﻿---
+﻿--- 
 page_type: sample
 description: This sample demonstrates how to use the Microsoft Graph .NET SDK to access data in Office 365 from Microsoft Bot Framework bots.
 products:
@@ -7,7 +7,7 @@ products:
 - office-exchange-online
 languages:
 - csharp
----
+--- 
 
 # Microsoft Graph Bot Framework sample
 
